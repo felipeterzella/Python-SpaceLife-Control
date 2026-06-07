@@ -155,9 +155,9 @@ def variaveis():
     print("6 - Correção de rota")
     print("7 - Modo econômico")
     print("8 - Desativar Modo econômico")
-    _ = input("ESCOLHA UMA OPÇÃO: (1,2,3,4,5,6,7,8")
+    escolha = input("ESCOLHA UMA OPÇÃO: (1,2,3,4,5,6,7,8")
     dados["modo_economico"] = False
-    match _:
+    match escolha:
         case "1":
             perda = float(input("Litros perdidos:"))
             dados["agua"] -= perda
