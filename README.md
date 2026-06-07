@@ -1,6 +1,6 @@
 Sistema de Controle de Recursos de uma Missão Espacial
 
-Sistema que simula o controle de recursos de uma nave espacial permitindo verificar automnomia e se os suprimentos são suficientes para o restante da missão.
+Sistema que simula o controle de recursos de uma nave espacial permitindo verificar autonomia e se os suprimentos são suficientes para o restante da missão.
 
 Funcionalidades
 
