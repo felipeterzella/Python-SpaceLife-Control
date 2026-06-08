@@ -1,6 +1,6 @@
 from funcoes import relatorio, variaveis, calcular, cadastrar_recursos
 while True:
-    print("======SISTEMA DE CONTROLE DE RECURSOS======")
+    print("=============SpaceLife-Control=============")
     print("1 - Adicionar recursos")
     print("2 - Calcular autonomia")
     print("3 - Aplicar evento")
