@@ -155,9 +155,9 @@ def variaveis():
     print("6 - Correção de rota")
     print("7 - Modo econômico")
     print("8 - Desativar Modo econômico")
-    escolha = input("ESCOLHA UMA OPÇÃO: (1,2,3,4,5,6,7,8")
+    _ = input("ESCOLHA UMA OPÇÃO: (1,2,3,4,5,6,7,8")
     dados["modo_economico"] = False
-    match escolha:
+    match _:
         case "1":
             perda = float(input("Litros perdidos:"))
             dados["agua"] -= perda
@@ -184,3 +184,18 @@ def variaveis():
             dados["consumo_energia"] = dados["consumo_energia"] - (dados["consumo_energia"] * reducao/100)
         case "8":
             dados["modo_economico"] = False
+
+
+def adicionar():
+    opcao = input("ESCOLHA UMA OPÇÃO PARA ADICIONAR MAIS RECURSOS A QUANTIDADE ORIGINAL (1-água,2-comida,3-oxigênio,4-energia,5-combustivel)")
+    match opcao:
+        case "1":
+            dados["agua"] += float(input("Quantidade de água (L) a ser adicioanda:"))
+        case "2":
+            dados["comida"] += float(input("Quantidade de refeicões a ser adicioanda:"))
+        case "3":
+            dados["oxigênio"] += float(input("Quantidade de oxigênio (kg) a ser adicioanda:"))
+        case "4":
+            dados["energia"] += float(input("Quantidade de energia (kWh) a ser adicioanda:"))
+        case "5":
+            dados["combustivel"] += float(input("Quantidade de combustivel (L) a ser adicioanda:"))
